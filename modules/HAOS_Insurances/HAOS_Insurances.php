@@ -37,5 +37,15 @@
  * display the words  "Powered by SugarCRM" and "Supercharged by SuiteCRM".
  ********************************************************************************/
 
-
-$app_list_strings['moduleList']['HAOS_Insurances'] = '保险管理';
+/**
+ * THIS CLASS IS FOR DEVELOPERS TO MAKE CUSTOMIZATIONS IN
+ */
+require_once('modules/HAOS_Insurances/HAOS_Insurances_sugar.php');
+class HAOS_Insurances extends HAOS_Insurances_sugar {
+	
+	function __construct(){
+		parent::__construct();
+	}
+	
+}
+?>

@@ -37,5 +37,8 @@
  * display the words  "Powered by SugarCRM" and "Supercharged by SuiteCRM".
  ********************************************************************************/
 
+/**
+ * This file adds support for studio
+ */
 
-$app_list_strings['moduleList']['HAOS_Insurances'] = '保险管理';
+?>

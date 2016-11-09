@@ -1,4 +1,5 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
  * SugarCRM Community Edition is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2013 SugarCRM Inc.
@@ -37,5 +38,18 @@
  * display the words  "Powered by SugarCRM" and "Supercharged by SuiteCRM".
  ********************************************************************************/
 
+/*********************************************************************************
 
-$app_list_strings['moduleList']['HAOS_Insurances'] = '保险管理';
+ * Description:  Defines the English language pack for the base application.
+ * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc.
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________..
+ ********************************************************************************/
+ 
+global $app_strings;
+
+$dashletMeta['HAOS_InsurancesDashlet'] = array('module'		=> 'HAOS_Insurances',
+										  'title'       => translate('LBL_HOMEPAGE_TITLE', 'HAOS_Insurances'), 
+                                          'description' => 'A customizable view into HAOS_Insurances',
+                                          'icon'        => 'icon_HAOS_Insurances_32.gif',
+                                          'category'    => 'Module Views');

@@ -1,4 +1,5 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
  * SugarCRM Community Edition is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2013 SugarCRM Inc.
@@ -37,5 +38,29 @@
  * display the words  "Powered by SugarCRM" and "Supercharged by SuiteCRM".
  ********************************************************************************/
 
+/*********************************************************************************
 
-$app_list_strings['moduleList']['HAOS_Insurances'] = '保险管理';
+ * Description:  Defines the English language pack for the base application.
+ * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc.
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________..
+ ********************************************************************************/
+
+require_once('include/Dashlets/DashletGeneric.php');
+require_once('modules/HAOS_Insurances/HAOS_Insurances.php');
+
+class HAOS_InsurancesDashlet extends DashletGeneric { 
+    function __construct($id, $def = null) {
+		global $current_user, $app_strings;
+		require('modules/HAOS_Insurances/metadata/dashletviewdefs.php');
+
+        parent::__construct($id, $def);
+
+        if(empty($def['title'])) $this->title = translate('LBL_HOMEPAGE_TITLE', 'HAOS_Insurances');
+
+        $this->searchFields = $dashletData['HAOS_InsurancesDashlet']['searchFields'];
+        $this->columns = $dashletData['HAOS_InsurancesDashlet']['columns'];
+
+        $this->seedBean = new HAOS_Insurances();        
+    }
+}

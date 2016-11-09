@@ -37,5 +37,19 @@
  * display the words  "Powered by SugarCRM" and "Supercharged by SuiteCRM".
  ********************************************************************************/
 
-
-$app_list_strings['moduleList']['HAOS_Insurances'] = '保险管理';
+/*
+ * Created on August 2 2007
+ *
+ * To change the template for this generated file go to
+ * Window - Preferences - PHPeclipse - PHP - Code Templates
+ */
+$module_name = 'HAOS_Insurances';
+ $metafiles[$module_name] = array(
+	'detailviewdefs'  => 	'modules/' . $module_name . '/metadata/detailviewdefs.php', 	
+	'editviewdefs'    => 	'modules/' . $module_name . '/metadata/editviewdefs.php',
+ 	'listviewdefs'    => 	'modules/' . $module_name . '/metadata/listviewdefs.php',
+ 	'searchdefs'      =>    'modules/' . $module_name . '/metadata/searchdefs.php',
+ 	'popupdefs'	      =>    'modules/' . $module_name . '/metadata/popupdefs.php',
+ 	'searchfields'	  =>    'modules/' . $module_name . '/metadata/SearchFields.php',
+ );
+?>

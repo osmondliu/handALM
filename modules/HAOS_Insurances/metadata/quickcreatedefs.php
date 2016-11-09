@@ -37,5 +37,27 @@
  * display the words  "Powered by SugarCRM" and "Supercharged by SuiteCRM".
  ********************************************************************************/
 
-
-$app_list_strings['moduleList']['HAOS_Insurances'] = '保险管理';
+$module_name = 'HAOS_Insurances';
+$viewdefs[$module_name]['QuickCreate'] = array(
+    'templateMeta' => array('maxColumns' => '2', 
+                            'widths' => array(
+                                            array('label' => '10', 'field' => '30'), 
+                                            array('label' => '10', 'field' => '30')
+                                            ),                                                                                                                                    
+                                            ),
+                                            
+                                            
+ 'panels' =>array (
+  'default' => 
+  array (
+    
+    array (
+      'name',
+      'assigned_user_name',
+    ),
+  ),
+                                                    
+),
+                        
+);
+?>
