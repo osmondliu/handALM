@@ -3,6 +3,29 @@
 
  
  //WARNING: The contents of this file are auto-generated
+$beanList['app_apply'] = 'app_apply';
+$beanFiles['app_apply'] = 'modules/app_apply/app_apply.php';
+$moduleList[] = 'app_apply';
+$beanList['app_apply_line'] = 'app_apply_line';
+$beanFiles['app_apply_line'] = 'modules/app_apply_line/app_apply_line.php';
+$moduleList[] = 'app_apply_line';
+
+
+ 
+ //WARNING: The contents of this file are auto-generated
+$beanList['cux_apply'] = 'cux_apply';
+$beanFiles['cux_apply'] = 'modules/cux_apply/cux_apply.php';
+$moduleList[] = 'cux_apply';
+$beanList['cux_status'] = 'cux_status';
+$beanFiles['cux_status'] = 'modules/cux_status/cux_status.php';
+$moduleList[] = 'cux_status';
+$beanList['cux_type'] = 'cux_type';
+$beanFiles['cux_type'] = 'modules/cux_type/cux_type.php';
+$moduleList[] = 'cux_type';
+
+
+ 
+ //WARNING: The contents of this file are auto-generated
 $beanList['HAA_Docs'] = 'HAA_Docs';
 $beanFiles['HAA_Docs'] = 'modules/HAA_Docs/HAA_Docs.php';
 $modules_exempt_from_availability_check['HAA_Docs'] = 'HAA_Docs';
@@ -152,6 +175,13 @@ $moduleList[] = 'HAM_WO_Lines';
 
  
  //WARNING: The contents of this file are auto-generated
+$beanList['HAM_WOOP'] = 'HAM_WOOP';
+$beanFiles['HAM_WOOP'] = 'modules/HAM_WOOP/HAM_WOOP.php';
+$moduleList[] = 'HAM_WOOP';
+
+
+ 
+ //WARNING: The contents of this file are auto-generated
 $beanList['HAT_Assets'] = 'HAT_Assets';
 $beanFiles['HAT_Assets'] = 'modules/HAT_Assets/HAT_Assets.php';
 $moduleList[] = 'HAT_Assets';
@@ -260,6 +290,13 @@ $moduleList[] = 'HAT_Counting_Tasks';
 
  
  //WARNING: The contents of this file are auto-generated
+$beanList['HAT_Domains'] = 'HAT_Domains';
+$beanFiles['HAT_Domains'] = 'modules/HAT_Domains/HAT_Domains.php';
+$moduleList[] = 'HAT_Domains';
+
+
+ 
+ //WARNING: The contents of this file are auto-generated
 $beanList['HAT_Linear_Elements'] = 'HAT_Linear_Elements';
 $beanFiles['HAT_Linear_Elements'] = 'modules/HAT_Linear_Elements/HAT_Linear_Elements.php';
 $moduleList[] = 'HAT_Linear_Elements';
@@ -336,6 +373,18 @@ $moduleList[] = 'HFA_FA_Value';
 $beanList['HFA_Fixed_Assets'] = 'HFA_Fixed_Assets';
 $beanFiles['HFA_Fixed_Assets'] = 'modules/HFA_Fixed_Assets/HFA_Fixed_Assets.php';
 $moduleList[] = 'HFA_Fixed_Assets';
+
+ 
+ //WARNING: The contents of this file are auto-generated
+$beanList['HIE_exp_apply_headers'] = 'HIE_exp_apply_headers';
+$beanFiles['HIE_exp_apply_headers'] = 'modules/HIE_exp_apply_headers/HIE_exp_apply_headers.php';
+$moduleList[] = 'HIE_exp_apply_headers';
+$beanList['HIE_exp_apply_lines'] = 'HIE_exp_apply_lines';
+$beanFiles['HIE_exp_apply_lines'] = 'modules/HIE_exp_apply_lines/HIE_exp_apply_lines.php';
+$modules_exempt_from_availability_check['HIE_exp_apply_lines'] = 'HIE_exp_apply_lines';
+$report_include_modules['HIE_exp_apply_lines'] = 'HIE_exp_apply_lines';
+$modInvisList[] = 'HIE_exp_apply_lines';
+
 
  
  //WARNING: The contents of this file are auto-generated
@@ -470,6 +519,18 @@ $moduleList[] = 'HMM_Trans_Lines';
 $beanList['HMM_Trans_History'] = 'HMM_Trans_History';
 $beanFiles['HMM_Trans_History'] = 'modules/HMM_Trans_History/HMM_Trans_History.php';
 $moduleList[] = 'HMM_Trans_History';
+
+
+ 
+ //WARNING: The contents of this file are auto-generated
+$beanList['HSI_staff_driver_header'] = 'HSI_staff_driver_header';
+$beanFiles['HSI_staff_driver_header'] = 'modules/HSI_staff_driver_header/HSI_staff_driver_header.php';
+$moduleList[] = 'HSI_staff_driver_header';
+$beanList['HSI_staff_driver_lines'] = 'HSI_staff_driver_lines';
+$beanFiles['HSI_staff_driver_lines'] = 'modules/HSI_staff_driver_lines/HSI_staff_driver_lines.php';
+$modules_exempt_from_availability_check['HSI_staff_driver_lines'] = 'HSI_staff_driver_lines';
+$report_include_modules['HSI_staff_driver_lines'] = 'HSI_staff_driver_lines';
+$modInvisList[] = 'HSI_staff_driver_lines';
 
 
 ?>
