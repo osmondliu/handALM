@@ -508,35 +508,30 @@ function formatNumber(n, num_grp_sep, dec_sep, round, precision) {
     return n[0] + (n.length > 1 && n[1] !== "" ? dec_sep + n[1] : "");
 }
 
-/*function check_form(formname) {
+function check_form(formname) {
     if (typeof(siw) != 'undefined' && siw && typeof(siw.selectingSomething) != 'undefined' && siw.selectingSomething) {
         return false;
     } else {
-        var bool=false;
-        if ($("#name_label0").has(".required")&&$("#product_name0").val()=="") {
-            var html='<div class="required validation-message">缺少必填字段:产品</div>';
-            $("#product_name0").parent().append(html);
-            bool=true;
-        }
-        if ($("#list_price_label0").has(".required")&&$("#product_product_list_price0").val()=="") {
-            var html='<div class="required validation-message">缺少必填字段:单价</div>';
-            $("#product_product_list_price0").parent().append(html);
-            bool=true;
-        }
-        if($("#unit_price_label0").has(".required")&&$("#product_product_unit_price0").val()==""){
-            var html='<div class="required validation-message">缺少必填字段:实际单价</div>';
-            $("#product_product_unit_price0").parent().append(html);
-            bool=true;
-        }
-        if($("#total_price_label0").has(".required")&&$("#product_product_total_price0").val()==""){
-            var html='<div class="required validation-message">缺少必填字段:单价</div>';
-            $("#product_product_total_price0").parent().append(html);
-            bool=true;
-        }
-        if (bool==true) {
-            return false;
-        }else{
-            return validate_form(formname, '');
-        }
+        var flag=false;
+        $(".required").each(function(){
+            var label_id="";//获取label的ID
+            if($(this).parent().attr("id")){
+                label_id=$(this).parent().attr("id");
+            }
+            var array=label_id.split("_label");//按照_label截取为数组,取第一个,即为字段ID
+            var field_id=array[0];
+            if (array[1]!="") {
+                field_id+=array[1];
+            }
+            var field_label=$(this).parent().text().replace("*","");
+            field_label=field_label.replace(":","");
+            if($("#"+field_id).val()==""){//文本域input、textarea
+                //获取字段对应文本框的ID
+                add_error_style('EditView', field_id, SUGAR.language.get('app_strings', 'ERR_MISSING_REQUIRED_FIELDS')+field_label);
+                flag=true;
+            }
+        });
+        if(!flag)
+            return validate_form(formname,'');
     }
-}*/
+}

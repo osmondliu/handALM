@@ -2,6 +2,19 @@
  //WARNING: The contents of this file are auto-generated
 
 
+// created: 2016-09-24 10:08:45
+$dictionary["Account"]["fields"]["cux_apply_accounts"] = array (
+  'name' => 'cux_apply_accounts',
+  'type' => 'link',
+  'relationship' => 'cux_apply_accounts',
+  'source' => 'non-db',
+  'module' => 'cux_apply',
+  'bean_name' => 'cux_apply',
+  'side' => 'right',
+  'vname' => 'LBL_CUX_APPLY_ACCOUNTS_FROM_CUX_APPLY_TITLE',
+);
+
+
 // created: 2016-02-08 10:53:31
 $dictionary["Account"]["fields"]["haa_qual_accounts"] = array (
   'name' => 'haa_qual_accounts',
@@ -99,6 +112,24 @@ $dictionary['Account']['fields']['attribute8_c']['labelValue']='attribute8';
  // created: 2016-10-25 21:46:25
 $dictionary['Account']['fields']['attribute9_c']['inline_edit']='';
 $dictionary['Account']['fields']['attribute9_c']['labelValue']='attribute9';
+
+ 
+
+ // created: 2016-02-16 21:12:43
+$dictionary['Account']['fields']['buisness_license_id_c']['inline_edit']='1';
+$dictionary['Account']['fields']['buisness_license_id_c']['labelValue']='Buisness License ID';
+
+ 
+
+ // created: 2016-02-16 21:13:03
+$dictionary['Account']['fields']['buisness_license_id_from_c']['inline_edit']='1';
+$dictionary['Account']['fields']['buisness_license_id_from_c']['labelValue']='Buisness License ID From';
+
+ 
+
+ // created: 2016-02-16 21:13:17
+$dictionary['Account']['fields']['buisness_license_id_to_c']['inline_edit']='1';
+$dictionary['Account']['fields']['buisness_license_id_to_c']['labelValue']='Buisness License ID To';
 
  
 
@@ -248,6 +279,24 @@ $dictionary['Account']['fields']['organization_number_c']['labelValue']='organiz
 
  
 
+ // created: 2016-02-16 21:07:47
+$dictionary['Account']['fields']['org_code_certificate_c']['inline_edit']='1';
+$dictionary['Account']['fields']['org_code_certificate_c']['labelValue']='Org Code Certificate';
+
+ 
+
+ // created: 2016-02-16 21:08:39
+$dictionary['Account']['fields']['org_code_certificate_from_c']['inline_edit']='1';
+$dictionary['Account']['fields']['org_code_certificate_from_c']['labelValue']='Org Code Certificate From';
+
+ 
+
+ // created: 2016-02-16 21:08:51
+$dictionary['Account']['fields']['org_code_certificate_to_c']['inline_edit']='1';
+$dictionary['Account']['fields']['org_code_certificate_to_c']['labelValue']='Org Code Certificate To';
+
+ 
+
  // created: 2016-02-16 21:17:56
 $dictionary['Account']['fields']['org_type_c']['inline_edit']='1';
 $dictionary['Account']['fields']['org_type_c']['labelValue']='Org Type';
@@ -263,6 +312,12 @@ $dictionary['Account']['fields']['registration_capital_c']['labelValue']='Capita
  // created: 2016-02-16 21:03:39
 $dictionary['Account']['fields']['registration_id_c']['inline_edit']='1';
 $dictionary['Account']['fields']['registration_id_c']['labelValue']='Registration ID';
+
+ 
+
+ // created: 2016-02-16 21:02:52
+$dictionary['Account']['fields']['registration_id_from_c']['inline_edit']='1';
+$dictionary['Account']['fields']['registration_id_from_c']['labelValue']='Registration ID From';
 
  
 
@@ -335,6 +390,24 @@ $dictionary['Account']['fields']['service_person_desc_c']['labelValue']='Service
  // created: 2016-06-16 17:01:42
 $dictionary['Account']['fields']['service_responsible_person_c']['inline_edit']='';
 $dictionary['Account']['fields']['service_responsible_person_c']['labelValue']='Service Responsible Person';
+
+ 
+
+ // created: 2016-02-16 21:04:31
+$dictionary['Account']['fields']['taxpayer_id_c']['inline_edit']='1';
+$dictionary['Account']['fields']['taxpayer_id_c']['labelValue']='Taxpayer ID';
+
+ 
+
+ // created: 2016-02-16 21:04:56
+$dictionary['Account']['fields']['taxpayer_id_from_c']['inline_edit']='1';
+$dictionary['Account']['fields']['taxpayer_id_from_c']['labelValue']='Taxpayer ID From';
+
+ 
+
+ // created: 2016-02-16 21:05:11
+$dictionary['Account']['fields']['taxpayer_id_to_c']['inline_edit']='1';
+$dictionary['Account']['fields']['taxpayer_id_to_c']['labelValue']='Taxpayer ID To';
 
  
 ?>

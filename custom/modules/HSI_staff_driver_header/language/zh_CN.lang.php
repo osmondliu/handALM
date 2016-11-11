@@ -1,0 +1,7 @@
+<?php
+// created: 2016-10-10 16:23:08
+$mod_strings = array (
+  'LBL_EDITVIEW_PANEL1' => '新建面板 1',
+  'LBL_HSI_STAFF_DRIVER_HEADER_HSI_STAFF_DRIVER_LINES_FROM_HSI_STAFF_DRIVER_LINES_TITLE' => '面试跟踪',
+  'LBL_EDITVIEW_PANEL2' => '面试跟踪',
+);

@@ -16,7 +16,7 @@ function triger_setFF(id_value, module_name) {
 
 			 hideAllAttributes(ff_fields)//将所有的Attribute先变空，如果Attribute在FF中有设置，在后续的SetFF过程中会自动显示出来，否则这些扩展字段默认都不显示
              $.each(ff_fields.FF, function () { //针对读取到的FF模板，针对每个设置的条目进行处理
-                setFF(this)
+                setFF(this,module_name)
             })
 
             if (typeof(ff_fields.JS)!="undefined") {
@@ -40,7 +40,7 @@ function htmlUnescape(str){
         .replace(/&amp;/g, '&');
 }
 
-function setFF(FFObj) {
+function setFF(FFObj,module_name) {
 	//设置FlexFORM，基于triger_setFF函数读取到的Ajax结果，动态的调整界面字段
 	//其中FFObj是FF_Fields中定义的需要变化的各个字段及属性
 	//console.log(FFObj);//<-------------------如果你需要调试，可以将这一行的内容输出
@@ -92,9 +92,11 @@ function setFF(FFObj) {
 		if (FFObj.att_required == 0) {
 			//非必须
 			$("#"+FFObj.field+'_label').children().remove(".required");
+			removeFromValidate('EditView',FFObj.field);
 		} else {
 			//必须
 			$("#"+FFObj.field+'_label').append('<span class="required">*</span>');
+			addToValidate('EditView', FFObj.field,'varchar', 'true', SUGAR.language.get(module_name,'LBL_'+FFObj.field.toUpperCase()));
 		}
 
 		//TODO还需要添加字段为值列表、Checkbox等一系列形态
@@ -109,7 +111,7 @@ function setFF(FFObj) {
 	}
 }
 //重写check_form方法
-function check_form(formname){
+/*function check_form(formname){
 	if(typeof(siw)!='undefined'&&siw&&typeof(siw.selectingSomething)!='undefined'&&siw.selectingSomething)
 		return false;
 	else{
@@ -137,7 +139,7 @@ function check_form(formname){
 		if(!flag)
 			return validate_form(formname,'');
 	}
-}
+}*/
 
 function hideAllAttributes(ff_fields) {
 	//在FF设置之前进行调用，用于将所有的Attribute对象进行隐藏，也就是所有的Attribute默认都是不显示的，除非在FF中进行了设置
