@@ -2,6 +2,53 @@
  //WARNING: The contents of this file are auto-generated
 
 
+// created: 2016-09-30 10:46:34
+$dictionary["Contact"]["fields"]["app_apply_contacts"] = array (
+  'name' => 'app_apply_contacts',
+  'type' => 'link',
+  'relationship' => 'app_apply_contacts',
+  'source' => 'non-db',
+  'module' => 'app_apply',
+  'bean_name' => 'app_apply',
+  'vname' => 'LBL_APP_APPLY_CONTACTS_FROM_APP_APPLY_TITLE',
+  'id_name' => 'app_apply_contactsapp_apply_ida',
+);
+$dictionary["Contact"]["fields"]["app_apply_contacts_name"] = array (
+  'name' => 'app_apply_contacts_name',
+  'type' => 'relate',
+  'source' => 'non-db',
+  'vname' => 'LBL_APP_APPLY_CONTACTS_FROM_APP_APPLY_TITLE',
+  'save' => true,
+  'id_name' => 'app_apply_contactsapp_apply_ida',
+  'link' => 'app_apply_contacts',
+  'table' => 'app_apply',
+  'module' => 'app_apply',
+  'rname' => 'name',
+);
+$dictionary["Contact"]["fields"]["app_apply_contactsapp_apply_ida"] = array (
+  'name' => 'app_apply_contactsapp_apply_ida',
+  'type' => 'link',
+  'relationship' => 'app_apply_contacts',
+  'source' => 'non-db',
+  'reportable' => false,
+  'side' => 'left',
+  'vname' => 'LBL_APP_APPLY_CONTACTS_FROM_APP_APPLY_TITLE',
+);
+
+
+// created: 2016-09-24 10:08:46
+$dictionary["Contact"]["fields"]["cux_apply_contacts"] = array (
+  'name' => 'cux_apply_contacts',
+  'type' => 'link',
+  'relationship' => 'cux_apply_contacts',
+  'source' => 'non-db',
+  'module' => 'cux_apply',
+  'bean_name' => 'cux_apply',
+  'side' => 'right',
+  'vname' => 'LBL_CUX_APPLY_CONTACTS_FROM_CUX_APPLY_TITLE',
+);
+
+
 // created: 2016-02-08 10:53:31
 $dictionary["Contact"]["fields"]["hat_assets_contacts"] = array (
   'name' => 'hat_assets_contacts',
