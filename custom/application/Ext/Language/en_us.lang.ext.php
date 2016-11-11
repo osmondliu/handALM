@@ -1610,6 +1610,7 @@ $app_list_strings['moduleList']['HPR_AM_Roles'] = 'AM Roles';
 
 
 $app_list_strings['moduleList']['HAOS_Revenues_Quotes'] = '收支计费项';
+$app_list_strings['moduleList']['HAOS_Insurances'] = '保险管理';
 
 
 /*********************************************************************************

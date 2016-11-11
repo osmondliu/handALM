@@ -1016,6 +1016,7 @@ $app_list_strings['hat_treatment_status_list']['Completed'] = '已处理';
 
 
 $app_list_strings['moduleList']['HAOS_Revenues_Quotes'] = '收支计费项';
+$app_list_strings['moduleList']['HAOS_Insurances'] = '保险管理';
 
 
 /*********************************************************************************
