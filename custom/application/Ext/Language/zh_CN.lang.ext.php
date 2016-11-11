@@ -794,6 +794,7 @@ $app_list_strings['ham_work_orders_resolution_dom']['Invalid'] = '无效';
 
 
 $app_list_strings['moduleList']['HAOS_Revenues_Quotes'] = '收支计费项';
+$app_list_strings['moduleList']['HAOS_Insurances'] = '保险管理';
 
 
 /*********************************************************************************
