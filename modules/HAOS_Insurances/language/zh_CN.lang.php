@@ -95,4 +95,12 @@ $mod_strings = array (
   'LBL_ATTRIBUTE10' => '预留字段10',
   'LNK_IMPORT_HAOS_INSURANCES' => '导入 保险管理',
   'LBL_HAOS_INSURANCES_SUBPANEL_TITLE' => '保险管理',
+  'LBL_DOC_DESCRIPTION'=>'说明:',
+  'LBL_DOC_STATUS'=> '状态',
+  'LBL_CATEGORY_VALUE' => '类别',
+  'LBL_DOC_VERSION' => '版本:',
+  'LBL_DOC_NAME' => '文档名称',
+  'LBL_FILENAME' => '文件名称',
+  'LBL_NEW_LINE' => '创建',
+  'LBL_ACTIVE_DATE' =>'启用日期',
 );
