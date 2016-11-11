@@ -230,9 +230,9 @@ $moduleList[] = 'HPR_AM_Roles';
 
  
  //WARNING: The contents of this file are auto-generated
-$beanList['HAOS_Revenues_Quotes'] = 'HAOS_Revenues_Quotes';
-$beanFiles['HAOS_Revenues_Quotes'] = 'modules/HAOS_Revenues_Quotes/HAOS_Revenues_Quotes.php';
-$moduleList[] = 'HAOS_Revenues_Quotes';
+$beanList['HAOS_Insurances'] = 'HAOS_Insurances';
+$beanFiles['HAOS_Insurances'] = 'modules/HAOS_Insurances/HAOS_Insurances.php';
+$moduleList[] = 'HAOS_Insurances';
 
 
  
