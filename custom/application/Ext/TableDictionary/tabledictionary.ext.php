@@ -43,11 +43,6 @@ include('custom/metadata/cux_apply_projectMetaData.php');
 
  
  //WARNING: The contents of this file are auto-generated
-include('custom/metadata/haos_insurances_documentsMetaData.php');
-
-
- 
- //WARNING: The contents of this file are auto-generated
 include('custom/metadata/hat_assets_accountsMetaData.php');
 
 
